@@ -105,7 +105,7 @@ async function processUserInformations() {
         kLines,
       );
     }
-    console.log('Done 🎉, ', fileType);
+    console.log('Done 🎉');
   }
 }
 
