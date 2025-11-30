@@ -1,4 +1,4 @@
-# binance-get-kline
+# @theservat/binance-get-kline
 
 Utility to retrieve historical data from Binance.
 
@@ -8,17 +8,17 @@ Utility to retrieve historical data from Binance.
 ### With the cli
 
 ```sh
-npm install -g binance-get-kline
+npm install -g @theservat/binance-get-kline
 binance-get-kline download
 
 # or by using npx
-npx binance-get-kline download
+npx @theservat/binance-get-kline download
 ```
 
 ### With the library
 
 ```ts
-import { getKline, Kline } from 'binance-get-kline';
+import { getKline, Kline } from '@theservat/binance-get-kline';
 
 const result: Array<Kline> = await getKline(
   'ETHUSDT',
