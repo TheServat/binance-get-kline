@@ -1,5 +1,5 @@
 {
-  "name": "binance-get-kline",
+  "name": "@theservat/binance-get-kline",
   "version": "0.0.1",
   "author": "Sajjad Servatjoo",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "build"
   ],
   "bin": {
-    "binance-historical": "./build/index.js"
+    "binance-get-kline": "./build/index.js"
   },
   "keywords": [
     "node",
