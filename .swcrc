@@ -1,0 +1,22 @@
+{
+  "minify": true,
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "target": "es2021",
+    "minify": {
+      "compress": {
+        "unused": true
+      },
+      "mangle": true
+    }
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "sourceMaps": true
+}

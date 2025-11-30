@@ -1,0 +1,81 @@
+{
+  "name": "binance-get-kline",
+  "version": "1.5.41",
+  "author": "Sajjad Servatjoo",
+  "license": "MIT",
+  "main": "./build/index.js",
+  "description": "Download historical klines from binance api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theservat/binance-get-kline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theservat/binance-get-kline/issues"
+  },
+  "homepage": "https://github.com/theservat/binance-get-kline#readme",
+  "files": [
+    "build"
+  ],
+  "bin": {
+    "binance-historical": "./build/index.js"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "binance",
+    "history",
+    "historic",
+    "klines",
+    "download",
+    "trading"
+  ],
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "nodemon",
+    "develop": "swc ./src -d build/ && node build/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "clean": "rimraf build",
+    "build": "rimraf build && tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "build:swc": "swc ./src -d build",
+    "build:swc:watch": "npm run build:swc -- -w",
+    "lint": "eslint ./src --ext .ts",
+    "prettier": "prettier --write './src/**/*.{ts,js,json}'",
+    "release": "semantic-release"
+  },
+  "dependencies": {
+    "axios": "1.13.2",
+    "cli-progress": "^3.12.0",
+    "commander": "^14.0.2",
+    "json-2-csv": "^5.5.10",
+    "prompts": "2.4.2"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "12.0.2",
+    "@semantic-release/npm": "^13.1.2",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "@swc/cli": "0.7.9",
+    "@swc/core": "1.15.3",
+    "@swc/jest": "0.2.39",
+    "@types/cli-progress": "^3.11.6",
+    "@types/jest": "30.0.0",
+    "@types/node": "24.10.1",
+    "@types/prompts": "2.4.9",
+    "@typescript-eslint/eslint-plugin": "8.48.0",
+    "@typescript-eslint/parser": "8.48.0",
+    "eslint": "9.39.1",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-jest": "29.2.1",
+    "jest": "30.2.0",
+    "nodemon": "3.1.11",
+    "prettier": "3.7.3",
+    "rimraf": "6.1.2",
+    "semantic-release": "25.0.2",
+    "ts-jest": "29.4.5",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.3"
+  }
+}
