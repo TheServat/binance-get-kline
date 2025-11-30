@@ -1,6 +1,6 @@
 {
   "name": "@theservat/binance-get-kline",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Sajjad Servatjoo",
   "license": "MIT",
   "main": "./build/index.js",
