@@ -15,4 +15,4 @@ jobs:
       - name: Install
         run: npm i
       - name: Lint
-        run: npm lint
+        run: npm run lint
