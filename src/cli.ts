@@ -58,6 +58,10 @@ const questions: Array<prompts.PromptObject> = [
         title: 'JSON File',
         value: 'json',
       },
+      {
+        title: 'JSON stdout',
+        value: 'json-out',
+      },
     ],
     initial: 0,
   },
@@ -104,8 +108,12 @@ async function processUserInformations() {
           )}.csv`,
         kLines,
       );
+    } else if (fileType === 'json-out') {
+      console.log(JSON.stringify(kLines, null, 2));
     }
-    console.log('Done 🎉');
+    if (fileType !== 'json-out') {
+      console.log('Done 🎉');
+    }
   }
 }
 
